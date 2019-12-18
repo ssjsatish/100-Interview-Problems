@@ -5,17 +5,6 @@
     Space: O(1)
 '''
 def twoSum(array, targetSum):
-    array.sort()
-    left = 0
-    right = len(array)-1
-    while left < right:
-        twoSum = array[left]+array[right]
-        if twoSum == targetSum:
-            return sorted( [ array[left], array[right] ] )
-        elif twoSum < targetSum:
-            left = left + 1
-        elif twoSum > targetSum:
-            right = right - 1
     return []
 
 
