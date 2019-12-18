@@ -4,8 +4,18 @@
     Time: O(n^2)
     Space: O(1)
 '''
-def twoSum(ar, k):
-
+def twoSum(array, targetSum):
+    array.sort()
+    left = 0
+    right = len(array)-1
+    while left < right:
+        twoSum = array[left]+array[right]
+        if twoSum == targetSum:
+            return sorted( [ array[left], array[right] ] )
+        elif twoSum < targetSum:
+            left = left + 1
+        elif twoSum > targetSum:
+            right = right - 1
     return []
 
 
@@ -26,5 +36,15 @@ def twoSumUsingDictionary(ar, k):
     Space: O(1)
 '''
 def twoSumUsingSort(ar, k):
-
+    ar.sort()
+    left = 0
+    right = len(ar)-1
+    while left < right:
+        twoSum = ar[left]+ar[right]
+        if twoSum == k:
+            return sorted( [ ar[left], ar[right] ] )
+        elif twoSum < k:
+            left = left + 1
+        elif twoSum > k:
+            right = right - 1
     return []
