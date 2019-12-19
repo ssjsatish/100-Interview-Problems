@@ -22,9 +22,9 @@ def twoSumUsingDictionary(ar, k):
     d = {}
     for i in range(len(ar)):
         if k-ar[i] in d:
-            return sorted([k-ar[i], ar[i]])
+            return sorted([k-ar[i], ar[i]])       
         else:
-			d[ar[i]] = True
+            d[ar[i]] = True
     return []
 
 # Approach #03
