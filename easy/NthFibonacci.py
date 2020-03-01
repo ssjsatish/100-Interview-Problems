@@ -1,11 +1,12 @@
 def getNthFib(n):
-    fib = [0]*n
-    fib[1] = 1
-    counter = 2
+    a = 0
+    b = 1
+    counter = 3
     while counter <= n:
-        fib[counter] = fib[counter-1] + fib[counter-2]
+        fib = a + b
+        a,b = b,fib
         counter +=1
-    return fib[n-1]
+    return b if n>1 else fib
 
-print(getNthFib(2))
-        
+n = 6
+print(getNthFib(n))
