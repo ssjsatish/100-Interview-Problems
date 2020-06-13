@@ -1,2 +1,2 @@
-# algoexpert
-70 Question from https://www.algoexpert.io
+# algoexpert Detailed code in Python and Java
+100 Question from https://www.algoexpert.io
