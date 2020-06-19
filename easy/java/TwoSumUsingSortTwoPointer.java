@@ -5,7 +5,7 @@ public class TwoSumUsingSortTwoPointer {
     public static int main(String[] args) {
         int[] array = {3,-4,5,8,11,-1,1,6};
         int targetSum = 10;
-        int[] result = twoNumberSumUsingSort(array, targetSum)
+        int[] result = twoNumberSumUsingSort(array, targetSum);
         int total = result[0]+result[1];
         return total;
     }

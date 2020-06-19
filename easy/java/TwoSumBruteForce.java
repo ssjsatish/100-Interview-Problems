@@ -1,9 +1,10 @@
 class TwoSumBruteForce {
 
-    public static void main(String[] args) {
+    public static int main(String[] args) {
         int[] array = {3,-4,5,8,11,-1,1,6};
         int targetSum = 10;
-        int[] result = twoNumberSum(array, targetSum)
+        int[] result = twoNumberSum(array, targetSum);
+        return result[0]+result[1];
     }
     public static int[] twoNumberSum(int[] array, int targetSum) {
         int len= array.length;
