@@ -1,4 +1,6 @@
-class TwoSumBruteForce {
+package TwoSum;
+
+public class TwoSumBruteForce {
 
     public static int main(String[] args) {
         int[] array = {3,-4,5,8,11,-1,1,6};
